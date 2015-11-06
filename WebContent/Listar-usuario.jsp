@@ -32,7 +32,7 @@
 			<td> <%=us.getId()%> </td>
 			<td> <%=us.getNome()%> </td>
 			<td> <%=us.getLogin()%> </td>
-			<td><a href="RemoveUsuarioServlet?id=<%=us.getId()%>">X</a></td>
+			<td><a href="RemoveUsuarioServlet?id=<%=us.getId()%>">X</a> <a href="AtualizaUsuarioServlet?id=<%=us.getId() %>">?</a></td>
 		</tr>
 		<%
 				}

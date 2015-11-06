@@ -48,12 +48,11 @@ public class CadastraUsuarioServlet extends HttpServlet {
 		u.setSenha(senha);
 		try {
 			daoUsuario.save(u);
+			
+			response.sendRedirect("index.html");
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		
-		response.sendRedirect("index.html");
-		
 	}
 
 }
