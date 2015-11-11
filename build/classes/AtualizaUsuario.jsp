@@ -12,7 +12,7 @@
 <body>
 	<h1>Atualizar Usuário</h1>
 		
-	<form action="EditaUsuarioServlet" method="post">
+	<form action="CadastraUsuarioServlet" method="post">
 		<%
 			session.getAttribute("usRs");
 		%>
