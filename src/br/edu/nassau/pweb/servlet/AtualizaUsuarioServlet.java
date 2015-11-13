@@ -48,14 +48,14 @@ public class AtualizaUsuarioServlet extends HttpServlet {
 		try {
 			us = daoUsuario.get(id);
 			HttpSession session = request.getSession();
-			
 			session.setAttribute("usRs", us);
 			
-			response.sendRedirect("AtualizaUsuario.jsp");
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		response.sendRedirect("CadastraUsuario.jsp");
 	}
 
 	/**
